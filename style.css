@@ -3,6 +3,7 @@
 :root {
     --main-background-color: #171010;
     --second-background-color: #1a1212;
+    --menu-item-background-color: #130b0b;
     --main-accent: #423F3E;
     --secondary-accent: #2B2B2B;
     --btn-hover-color: #201717;
@@ -27,11 +28,11 @@ main {
 }
 
 nav {
-    top: 100px;
+    top: 30px;
     position: sticky;
     display: flex;
     justify-content: center;
-    align-items: center;;
+    align-self: flex-start;
     text-align: center;
 }
 
@@ -54,25 +55,27 @@ nav ul li:hover {
 section {
     background-color: var(--second-background-color);
     min-height: 100vh;
+    width: 100%;
 }
 
-article {
+/* ABOUT */
+.restaurant-banner {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.intro, .open-hours, .address {
     text-align: center;
     padding: 0 10vw;
     margin-bottom: 40px;
 }
 
-article h1 {
+.intro h1 {
     text-align: center;
     padding: 40px 0;
     font-size: 2rem;
-}
-
-section > img {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-    margin-bottom: 40px;
 }
 
 .intro p {
@@ -84,5 +87,48 @@ section > img {
 }
 
 .address p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
+
+/* MENU */
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 50px;
+    gap: 50px;
+}
+
+.item-card {
+    background-color: var(--menu-item-background-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.item-title {
+    padding: 20px 30px;
+}
+
+.item-desc {
+    padding: 0 30px;
+    padding-bottom: 20px;
+}
+
+.item-price {
+    padding: 0 30px;
+    padding-bottom: 20px;
+    align-self: flex-end;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
