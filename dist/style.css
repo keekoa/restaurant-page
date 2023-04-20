@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --main-background-color: #171010;
+    --main-background-color: #130b0b;
     --second-background-color: #1a1212;
     --menu-item-background-color: #130b0b;
     --main-accent: #423F3E;
@@ -151,6 +151,10 @@ section {
 
 .contact-address {
     font-size: 1.3rem;
+}
+
+.active {
+    background-color: var(--second-background-color);
 }
 
 

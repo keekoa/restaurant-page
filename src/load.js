@@ -10,13 +10,23 @@ const load = (() => {
         const contactList = document.createElement('li');
         const section = document.createElement('section');
 
+        /* ADD CLASSES TO NAV */
+        aboutList.classList.add('nav-link');
+        menuList.classList.add('nav-link');
+        contactList.classList.add('nav-link');
+        aboutList.classList.add('active');
+
+        /* ADD IDs TO NAV */
+        aboutList.id = 'intro';
+        menuList.id = 'menu';
+        contactList.id = 'contact';
+
         /* ADD CONTENT */
         aboutList.textContent = 'About';
         menuList.textContent = 'Menu';
         contactList.textContent = 'Contact';
 
         /* APPEND ELEMENTS */
-
         content.appendChild(main);
         main.appendChild(nav);
         nav.appendChild(ul);
