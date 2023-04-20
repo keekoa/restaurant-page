@@ -1,5 +1,7 @@
-import pageLoad from "./load";
-import loadIntro from "./intro";
+import load from "./load";
+import intro from "./intro";
+import menu from "./menu";
 
-pageLoad();
-loadIntro();
+load.pageLoad();
+// intro.loadIntro();
+menu.loadMenu();
