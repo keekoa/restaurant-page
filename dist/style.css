@@ -131,4 +131,26 @@ section {
     font-weight: 600;
 }
 
+/* CONTACT */
+.contact-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.phonenumber {
+    font-size: 1.5rem;
+}
+
+.email {
+    font-size: 1.4rem;
+}
+
+.contact-address {
+    font-size: 1.3rem;
+}
+
 
