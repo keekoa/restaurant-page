@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --main-background-color: #171010;
+    --second-background-color: #1a1212;
+    --main-accent: #423F3E;
+    --secondary-accent: #2B2B2B;
+    --btn-hover-color: #201717;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background-color: var(--main-background-color);
+    min-width: 800px;
+    font-family: 'PT Serif', serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+}
+
+nav {
+    top: 100px;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    background-color: var(--btn-hover-color);
+}
+
+.active {
+    background-color: var(--second-background-color);
+}
+
+section {
+    background-color: var(--second-background-color);
+    min-height: 100vh;
+}
+
+article {
+    text-align: center;
+    padding: 0 10vw;
+    margin-bottom: 40px;
+}
+
+article h1 {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 2rem;
+}
+
+section > img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+}
+
+.open-hours p {
+    font-size: 1.5rem;
+}
+
+.address p {
+    font-size: 1.1rem;
+}
